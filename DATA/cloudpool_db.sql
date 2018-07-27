@@ -473,8 +473,9 @@ CREATE TABLE `split_file_tb` (
   `splitFileID` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `userID` int(10) unsigned zerofill NOT NULL,
   `fileName` varchar(255) DEFAULT NULL,
-  `dbxPath` varchar(255) DEFAULT NULL,
   `googlePD` varchar(255) DEFAULT NULL,
+  `dbxPath` varchar(255) DEFAULT NULL,
+  `boxID` varchar(255) DEFAULT NULL,
   `mimeType` varchar(50) NOT NULL,
   `size` int(15) NOT NULL,
   `parents` varchar(50) DEFAULT NULL,
@@ -523,7 +524,7 @@ CREATE TABLE `user_info_tb` (
 
 LOCK TABLES `user_info_tb` WRITE;
 /*!40000 ALTER TABLE `user_info_tb` DISABLE KEYS */;
-INSERT INTO `user_info_tb` VALUES (0000000001,'test_user','test@gmail.com','\'wP9e9Kw5EOOVaHTpRSgpQOXTBo2992e0SVh2RkysG7yOBTXFanc4bcdRq8CsWrFRp7zjq5uv3Rt2pzRo1vCkrA==\'','0uXMCtGojkvHNLbvtYiPbjQ6EfJAg+NFZuBelIaNI09EZxQwEYmjkHBTMzuvXyKG+DjBtGQvO8lKEfGEPt56rtd4zZlPYj5kcv4jZ2s0YqyajuZMLYdCuKlqRSkjQnpGQLmesArU0S+3JABZPBUfocJkAVzMAuZDY6UgyYDyodY=','2018-07-25 08:47:06');
+INSERT INTO `user_info_tb` VALUES (0000000001,'test_user','test@gmail.com','\'wP9e9Kw5EOOVaHTpRSgpQOXTBo2992e0SVh2RkysG7yOBTXFanc4bcdRq8CsWrFRp7zjq5uv3Rt2pzRo1vCkrA==\'','0uXMCtGojkvHNLbvtYiPbjQ6EfJAg+NFZuBelIaNI09EZxQwEYmjkHBTMzuvXyKG+DjBtGQvO8lKEfGEPt56rtd4zZlPYj5kcv4jZ2s0YqyajuZMLYdCuKlqRSkjQnpGQLmesArU0S+3JABZPBUfocJkAVzMAuZDY6UgyYDyodY=','2018-07-27 11:54:27');
 /*!40000 ALTER TABLE `user_info_tb` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!50003 SET @saved_cs_client      = @@character_set_client */ ;
@@ -554,4 +555,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-07-25 17:53:20
+-- Dump completed on 2018-07-27 20:54:58
